@@ -8,6 +8,10 @@ public class PurchaseRequestItem {
     private int Amount;
     private int TotalPrice;
 
+    public PurchaseRequestItem(){
+        this.Id = UUID.randomUUID();
+    }
+
     public UUID getId() {
         return Id;
     }

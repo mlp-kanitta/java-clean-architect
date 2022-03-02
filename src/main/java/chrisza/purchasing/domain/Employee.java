@@ -1,10 +1,18 @@
 package chrisza.purchasing.domain;
 
 public class Employee {
+
     private String EmailAddress;
 
-    public Employee(String emailAddress) {
+    public String getLevel() {
+        return level;
+    }
+
+    private String level;
+
+    public Employee(String emailAddress,String level) {
         EmailAddress = emailAddress;
+        this.level = level;
     }
 
     public String getEmailAddress() {
